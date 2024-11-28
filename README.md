@@ -36,3 +36,7 @@ Run the development server:
 bash
 Copy code
 python manage.py runserver
+Access the admin panel:
+
+URL: http://127.0.0.1:8000/admin
+Login with your superuser credentials.
