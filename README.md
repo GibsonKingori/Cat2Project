@@ -1,21 +1,38 @@
-# Cat 2 Work
-# E-Commerce Application
+# E-Commerce Django Project
 
-This is a simple e-commerce application built with Django, featuring a Customer and Order model.
+## Overview
+A Django-based e-commerce project that models `Customer` and `Order` relationships. Each customer can place multiple orders.
 
 ## Setup Instructions
-
-To set up the environment and run the project, follow these steps:
-
-### Prerequisites
-
-- Python 3.x
-- pip (Python package manager)
-- Django (install via pip)
-
-### Installation
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/GibsonKingori/Cat2Project.git
-   cd ecommerce
+   cd Cat2Project
+Set up a virtual environment:
+
+bash
+Copy code
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Apply migrations:
+
+bash
+Copy code
+python manage.py makemigrations
+python manage.py migrate
+Create a superuser (for admin access):
+
+bash
+Copy code
+python manage.py createsuperuser
+Run the development server:
+
+bash
+Copy code
+python manage.py runserver
